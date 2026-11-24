@@ -1,0 +1,147 @@
+.navbar-custom{
+    background-color: #111da5;
+    font-size: 14pt;
+    font-weight: extra-light;
+}
+
+.navbar-brand > .navbar-item{
+    color: white;
+}
+
+.navbar-start a:hover, .navbar-start a:focus{
+    text-decoration: underline;
+}
+
+header{
+    display: block;
+    background-color: #9a9fd4;
+    padding-bottom: 20px;
+}
+
+.psych{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 190px;
+}
+
+.content h1{
+    display: block;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 8px #6e79f4;
+}
+
+.imgtext{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.text h2{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    font-size: 14pt;
+    font-weight: 200;
+}
+
+.homgimg{
+    grid-column: 1/2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #9a9fd4;
+    height: 200px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.psych2{
+    width: 40%;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 50px;
+}
+
+.footer h2{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 15pt;
+
+}
+
+.above-text{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.contact-button{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 60px;
+    display: block;
+    background-color: #111da5;
+    text-align: center;
+    align-self: center;
+}
+
+.button-learn h2{
+    color: white;
+    padding: 10px;
+    transition: font-size 4s;
+}
+
+.button-learn h2:hover, .button-learn h2:focus{
+    font-size: 24pt;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-custom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-start{
+        display: flex;
+        margin-left: auto;
+        margin-right: 0px;
+        
+    }
+    
+    .navbar-start a{
+        color: white;
+        justify-items: flex-end;
+    }
+
+    .navbar-start a:hover, .navbar-start a:focus{
+        text-decoration: underline;
+        color: black;
+    }
+
+    .psych{
+        margin-left: 375px;
+    }
+
+    .content{
+        grid-template-columns: 300px, 400px;
+    }
+
+    .homgimg img{
+        width: 400px;
+        margin-left: 125px;
+    }
+
+    .imgtext{
+        margin-right: 125px;
+    }
+
+    .psych2{
+        width: 25%;
+    }
+}
