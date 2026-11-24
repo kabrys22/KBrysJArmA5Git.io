@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" href="../css/formstyles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <style> body {font-family: "Trirong", serif;} </style>
+        <title>Assignment 5 for Kathryn Bryson and Josephine Armes</title>
+    </head>
+
+
+    <body>
+        <header>
+            <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">History of Psychology</a>
+                        <button class="navbar-burger" type="button"
+                                aria-label="menu" aria-expanded="false"
+                                aria-controls="navMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </button>
+                </div>
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="people.html">People</a>
+                        <a class="navbar-item" href="timeline.html">Timeline</a>
+                        <a class="navbar-item" href="references.html">References</a>
+                    </div>
+                    <div class="navbar-end"></div>
+                </div>
+            </nav>
+        </header>
+    <content class="content">
+        <h1>Want to suggest a topic for further research, please fill out the form below</h1>
+        <div class="research-form">
+            <h4>What research would you like to see?</h4>
+            <form action="/submit_page.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">What do you want to hear about?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </label><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </content>
+        <footer class="footer">
+            <div class="psych2">
+                <img src = "../images/psychimg.png" alt="psychology-logo">
+            </div>
+            <h2>History of psychology</h2>
+            <div class="above-text">
+                <h2>Want to Request Certain Information?</h2>
+            </div>
+            <div class="contact-button">
+                <a href="form.html">
+                    <button class="button-learn">
+                        <h2>Click Here</h2>
+                    </button>
+                </a>
+            </div>
+        </footer>
+        <script src="navbar.js"></script>
+    </body>
+</html>
